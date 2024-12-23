@@ -15,7 +15,23 @@ abstract class BrgDatabase : RoomDatabase() {
 
     abstract fun barangDao(): BarangDao
 
-    abstract fun suplierDao(): SuplierDao // Menambahkan fungsi untuk SuplierDao
+    abstract fun suplierDao(): SuplierDao
+
+    companion object{
+        @Volatile
+        private var Instance: BrgDatabase? =null
+
+        fun getDatabase(context: Context): BrgDatabase{
+            return (Instance ?: synchronized(this){
+                Room.databaseBuilder(
+                    context,
+                    BrgDatabase::class.java,
+                    "BrgDatabase"
+                )
+                    .build().also { Instance = it }
+            })
 
 
+        }
+    }
 }
