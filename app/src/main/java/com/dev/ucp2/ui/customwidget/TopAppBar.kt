@@ -32,6 +32,26 @@ fun TopAppBar(
             .background(backgroundColor)
             .padding(horizontal = 16.dp, vertical = 10.dp)
     ) {
+        if (showBackButton) {
+            IconButton(
+                onClick = onBack,
+                modifier = Modifier.align(Alignment.CenterStart).padding(top = 40.dp)
+            ) {
+                Icon(
+                    imageVector = Icons.Default.ArrowBack,
+                    contentDescription = "Kembali",
+                    tint = Color.White
+                )
+            }
+        }
+
+        Text(
+            text = judul,
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.White,
+            modifier = Modifier.align(Alignment.Center).padding(top = 40.dp)
+        )
 
     }
 }
