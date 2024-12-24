@@ -51,7 +51,40 @@ fun SplashView(
         Spacer(modifier = Modifier.height(16.dp))
 
 
+        Text(
+            text = "WARE FLOW",
+            style = TextStyle(
+                color = Color.White,
+                fontWeight = FontWeight.Bold,
+                fontSize = 24.sp
+            )
+        )
 
+
+        Text(
+            text = "Manajemen Barang Tanpa Hambatan",
+            style = TextStyle(
+                color = Color.White.copy(alpha = 0.7f),
+                fontSize = 14.sp
+            ),
+            modifier = Modifier.padding(top = 8.dp)
+        )
+
+        Spacer(modifier = Modifier.height(32.dp))
+
+
+        Button(
+            onClick = { onMulaiButton() },
+            modifier = Modifier
+                .padding(horizontal = 32.dp)
+                .fillMaxWidth()
+        ) {
+            Text(
+                text = "Mulai",
+                color = Color(0xFFFFFFFF),
+                fontWeight = FontWeight.Bold
+            )
+        }
     }
 }
 
