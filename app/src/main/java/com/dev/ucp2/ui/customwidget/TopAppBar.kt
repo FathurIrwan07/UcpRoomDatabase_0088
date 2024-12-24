@@ -53,5 +53,21 @@ fun TopAppBar(
             modifier = Modifier.align(Alignment.Center).padding(top = 40.dp)
         )
 
+        Box(
+            modifier = Modifier
+                .padding(top = 23.dp)
+                .padding(5.dp)
+                .size(50.dp)
+                .background(color = Color.White, shape = CircleShape)
+                .align(Alignment.CenterEnd),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                painter = painterResource(id = R.drawable.logoo),
+                contentDescription = "Logo",
+                tint = Color.Unspecified,
+                modifier = Modifier.size(32.dp)
+            )
+        }
     }
 }
