@@ -1,4 +1,4 @@
-Link Video : https://drive.google.com/file/d/1vP67RZGaOouVpFq3B4Tce4Sj0jj8Mg5c/view?usp=sharing
+Link Video : https://drive.google.com/file/d/1kTBRAXX--hdnBSe7LF2NnmQN-VA_1Isr/view?usp=sharing
 
 
 HASIL RUN APLIKASI
